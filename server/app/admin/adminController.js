@@ -22,9 +22,9 @@ const updateAdminDataController = async (req, res) => {
   console.log(req.body);
   var result = await adminService.updateOneAdminDBService(req.params.id, req.body);
   if (result) {
-    res.send({ "status": true, "message": "updated" });
+    res.send({ "status": true, "message": "updated" , "id": req.params.id});
   } else {
-    res.send({ "status": false, "message": "not updated" })
+    res.send({ "status": false, "message": "not updated" , "id": req.params.id})
   }
 };
 
@@ -32,9 +32,9 @@ const deleteAdminController = async (req, res) => {
   console.log(req.params.id);
   var result = await adminService.removeOneAdminDBService(req.params.id);
   if (result) {
-    res.send({ "status": true, "message": "deleted" });
+    res.send({ "status": true, "message": "deleted", "id": req.params.id});
   } else {
-    res.send({ "status": false, "message": "not deleted" });
+    res.send({ "status": false, "message": "not deleted" , "id": req.params.id });
   }
 };
 
