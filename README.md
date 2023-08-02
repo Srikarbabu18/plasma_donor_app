@@ -66,7 +66,7 @@ To run the Plasma Donor App, follow these steps:
    npm start
    ```
 
-4. Access the application in your web browser by visiting `http://localhost:3000`.
+4. Access the application in your web browser by visiting `http://localhost:4200`.
 
 ## Technologies Used
 
