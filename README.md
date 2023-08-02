@@ -76,7 +76,7 @@ To run the Plasma Donor App, follow these steps:
 
 ## Contributors
 
-- [Your Name]
+- Chitrala.Sai Siddharth Kumar
 
 ## License
 
